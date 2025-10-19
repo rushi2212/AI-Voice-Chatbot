@@ -89,7 +89,7 @@ const ChatBox = () => {
               m.sender === "user" ? "bubble-user" : "bubble-bot"
             }`}
           >
-            {m.text}
+            <span className="message-text">{m.text}</span>
             {m.sender === "bot" && (
               <button
                 className="speak-btn"
